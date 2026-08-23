@@ -1,0 +1,70 @@
+/* Site-level responsive layer. The design system's own components use inline
+   styles (which media queries can't reach), so grid/nav layouts that need to
+   respond to viewport width use these classes instead of inline grid-template
+   properties. Inline `style` still carries alignItems/gap-overrides etc. that
+   don't need to change per breakpoint. */
+
+.sv-split-75, .sv-split-57, .sv-split-66 {
+  display: grid;
+  gap: var(--space-8);
+}
+.sv-split-75 { grid-template-columns: 7fr 5fr; }
+.sv-split-57 { grid-template-columns: 5fr 7fr; }
+.sv-split-66 { grid-template-columns: 6fr 6fr; }
+
+.sv-g2, .sv-g3, .sv-g4 {
+  display: grid;
+  gap: var(--space-5);
+}
+.sv-g2 { grid-template-columns: repeat(2, 1fr); }
+.sv-g3 { grid-template-columns: repeat(3, 1fr); }
+.sv-g4 { grid-template-columns: repeat(4, 1fr); }
+
+.sv-footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.3fr 1.3fr;
+  gap: var(--space-7);
+}
+
+.sv-masonry { columns: 4; column-gap: var(--space-5); }
+
+.sv-aside-sticky { position: sticky; top: 100px; }
+
+.sv-nav-desktop { display: flex; align-items: center; gap: var(--space-6); margin-left: auto; }
+.sv-nav-toggle { display: none; }
+.sv-nav-mobile-panel { display: none; }
+
+.sv-hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: var(--space-8); align-items: center; padding: 96px var(--space-6) 88px 112px; }
+.sv-hero-rail { position: absolute; left: 0; top: 0; bottom: 0; width: 56px; border-right: 1px solid rgba(251,247,240,0.1); display: flex; align-items: center; justify-content: center; }
+.sv-hero-badge { position: absolute; left: -46px; bottom: 34px; }
+
+/* ≤960px: asymmetric two-column layouts stack; 4-col grids become 2-col */
+@media (max-width: 960px) {
+  .sv-split-75, .sv-split-57, .sv-split-66 { grid-template-columns: 1fr; gap: var(--space-6); }
+  .sv-g4 { grid-template-columns: repeat(2, 1fr); }
+  .sv-footer-grid { grid-template-columns: 1fr 1fr; row-gap: var(--space-6); }
+  .sv-masonry { columns: 2; }
+  .sv-hero-title { font-size: 3.4rem !important; }
+  .sv-hero-grid { grid-template-columns: 1fr; padding: 64px var(--space-6) 56px; }
+  .sv-hero-rail { display: none; }
+  .sv-hero-badge { position: static; margin-top: var(--space-5); display: inline-flex; }
+  .sv-aside-sticky { position: static; }
+}
+
+/* ≤860px: switch to the hamburger nav */
+@media (max-width: 860px) {
+  .sv-nav-desktop { display: none; }
+  .sv-nav-toggle { display: inline-flex; }
+  .sv-nav-mobile-panel.is-open { display: flex; }
+}
+
+/* ≤640px: everything down to one column, tighter spacing */
+@media (max-width: 640px) {
+  .sv-g2, .sv-g3 { grid-template-columns: 1fr; }
+  .sv-footer-grid { grid-template-columns: 1fr; }
+  .sv-masonry { columns: 1; }
+  .sv-section-pad { padding-top: var(--space-7) !important; padding-bottom: var(--space-7) !important; }
+  .sv-hero-title { font-size: 2.6rem !important; }
+  .sv-hide-mobile { display: none !important; }
+  .sv-stack-mobile { flex-direction: column !important; align-items: stretch !important; }
+}

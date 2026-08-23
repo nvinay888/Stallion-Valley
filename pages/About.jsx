@@ -4,7 +4,7 @@ function About({ onNav }) {
       <div style={{ background: 'var(--surface-inverse)', color: 'var(--cream-50)', padding: 'var(--space-7) 0 var(--space-8)' }}>
         <div style={{ maxWidth: 'var(--container-max)', margin: '0 auto', padding: '0 var(--space-6)' }}>
           <Breadcrumbs inverse items={[{ label: 'Home', href: '#' }, { label: 'About us' }]} style={{ marginBottom: 'var(--space-6)' }} />
-          <div style={{ display: 'grid', gridTemplateColumns: '7fr 5fr', gap: 'var(--space-8)', alignItems: 'end' }}>
+          <div className="sv-split-75" style={{ alignItems: 'end' }}>
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 18 }}>
                 <Icon name="mdi:horseshoe" size={20} color="#C7A15A" sway />
@@ -24,7 +24,7 @@ function About({ onNav }) {
 
       {/* Mission */}
       <Section>
-        <div style={{ display: 'grid', gridTemplateColumns: '5fr 7fr', gap: 'var(--space-8)', alignItems: 'center' }}>
+        <div className="sv-split-57" style={{ alignItems: 'center' }}>
           <ArchMedia src="uploads/sv-palms-child2.jpg" ratio="4 / 5" tone="warm" caption="A first ride at the Thrissur campus." />
           <div>
             <SectionHead overline="Our mission" title="A well-behaved, loving companion for life" />
@@ -41,7 +41,7 @@ function About({ onNav }) {
       {/* The story */}
       <Section tone="sunken">
         <SectionHead overline="Our story" title="Two founders, one valley" align="center" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 'var(--space-6)' }}>
+        <div className="sv-g2" style={{ gap: 'var(--space-6)' }}>
           <Reveal>
             <Card tone="raised" overline="Thrissur, Kerala" title="Babu Kunnumpuram">
               <p style={{ margin: 0 }}>
@@ -61,7 +61,7 @@ function About({ onNav }) {
 
       {/* Founder spotlight */}
       <Section tone="inverse">
-        <div style={{ display: 'grid', gridTemplateColumns: '5fr 7fr', gap: 'var(--space-8)', alignItems: 'center' }}>
+        <div className="sv-split-57" style={{ alignItems: 'center' }}>
           <div>
             <ArchMedia src="uploads/sv-founder-sandeep-menon.jpg" ratio="4 / 5" tone="dark" caption="Sandeep Menon, Bearhills, Bengaluru." />
           </div>
@@ -79,7 +79,7 @@ function About({ onNav }) {
               <p style={{ margin: 0 }}>
                 Through his mentorship, he creates immersive learning spaces that inspire both children and adults to cultivate discipline, leadership and a deep connection with the outdoors — leading unique lifestyle programmes and facility expansions across the Bengaluru region.
               </p>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-5)', padding: 'var(--space-5) 0', borderTop: '1px solid var(--border-inverse)', borderBottom: '1px solid var(--border-inverse)', marginTop: 6 }}>
+              <div className="sv-g2" style={{ padding: 'var(--space-5) 0', borderTop: '1px solid var(--border-inverse)', borderBottom: '1px solid var(--border-inverse)', marginTop: 6 }}>
                 <div>
                   <div style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-title-1)', color: 'var(--gilt-300)' }}>30+ yrs</div>
                   <div style={{ fontSize: 'var(--text-caption)', color: 'var(--text-inverse-muted)', marginTop: 4 }}>Sales leadership across telecom &amp; IT — Birla AT&amp;T Communications, WeP Peripherals and Hewlett&nbsp;Packard.</div>
@@ -103,7 +103,7 @@ function About({ onNav }) {
       {/* Bengaluru team */}
       <Section>
         <SectionHead overline="Bearhills, Bengaluru" title="Who keeps the show running" align="center" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 'var(--space-5)' }}>
+        <div className="sv-g4">
           {[
             ['Sandeep Menon', 'Chief Mentor'],
             ['Nishab', 'Director'],

@@ -19,7 +19,7 @@ function Homestay({ onNav }) {
           </p>
         </div>
         <ArchMedia src="uploads/sv-trail-dam-dogs.jpg" ratio="21 / 9" tone="oat" style={{ marginBottom: 'var(--space-8)' }} caption="Morning at the reservoir edge, Thrissur." />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--space-5)' }}>
+        <div className="sv-g3">
           {[
             ['mdi:food-turkey', 'Traditional Kerala cuisine', 'Home-cooked, homely food through your stay.'],
             ['mdi:hiking', 'Trekking', 'Forest and hill trails right from the property.'],
@@ -29,9 +29,12 @@ function Homestay({ onNav }) {
             ['mdi:horse-variant', 'Horse riding, of course', 'Twice a day if you like — morning and evening.'],
           ].map(([icon, t, b], i) => (
             <Reveal key={t} delay={i * 90}>
-              <Card overline="" title={t} tone="raised">
-                <span dangerouslySetInnerHTML={{ __html: b }} />
-                <span style={{ display: 'none' }}><Icon name={icon} /></span>
+              <Card tone="raised">
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                  <Icon name={icon} size={26} color="#A9832F" />
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-title-2)', margin: 0 }}>{t}</h3>
+                  <span>{b}</span>
+                </div>
               </Card>
             </Reveal>
           ))}
@@ -43,7 +46,7 @@ function Homestay({ onNav }) {
       {/* Two campuses, two rhythms */}
       <Section tone="inverse">
         <SectionHead inverse overline="Two campuses" title="A stay in Thrissur, a session in Bengaluru" align="center" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 'var(--space-6)' }}>
+        <div className="sv-g2" style={{ gap: 'var(--space-6)' }}>
           <Reveal>
             <ArchMedia src="uploads/sv-forest-trail.jpg" ratio="4 / 3" tone="dark" style={{ marginBottom: 'var(--space-5)' }} />
             <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-title-1)', color: 'var(--cream-50)' }}>Thrissur, Kerala</h3>
@@ -59,7 +62,7 @@ function Homestay({ onNav }) {
             </p>
           </Reveal>
         </div>
-        <div style={{ textAlign: 'center', marginTop: 'var(--space-7)', display: 'flex', gap: 12, justifyContent: 'center' }}>
+        <div className="sv-stack-mobile" style={{ textAlign: 'center', marginTop: 'var(--space-7)', display: 'flex', gap: 12, justifyContent: 'center' }}>
           <Button variant="metal" onClick={() => onNav('visit')}>Enquire about a Thrissur stay</Button>
           <Button variant="ghost-inverse" href="https://book.softshor.in/book/solbhumi">Book a Bengaluru session</Button>
         </div>

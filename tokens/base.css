@@ -40,3 +40,13 @@ a:hover { color: var(--text-link-hover); }
   text-transform: uppercase;
   letter-spacing: var(--tracking-wordmark);
 }
+
+summary::-webkit-details-marker { display: none; }
+summary::marker { content: ''; }
+summary { position: relative; padding-right: 28px; }
+summary::after {
+  content: '+';
+  position: absolute; right: 0; top: 0;
+  font-family: var(--font-body); font-size: 20px; color: var(--text-label);
+}
+details[open] summary::after { content: '\2212'; }

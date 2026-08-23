@@ -8,7 +8,7 @@ function Visit({ onNav, onSent }) {
         <Breadcrumbs items={[{ label: 'Home', href: '#' }, { label: 'Plan a visit' }]} style={{ marginBottom: 'var(--space-6)' }} />
 
         {/* Bengaluru shortcut */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap', background: 'var(--surface-inverse)', color: 'var(--cream-50)', borderRadius: 'var(--radius-md)', padding: 'var(--space-5) var(--space-6)', marginBottom: 'var(--space-7)' }}>
+        <div className="sv-stack-mobile" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap', background: 'var(--surface-inverse)', color: 'var(--cream-50)', borderRadius: 'var(--radius-md)', padding: 'var(--space-5) var(--space-6)', marginBottom: 'var(--space-7)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <Icon name="mdi:calendar-check-outline" size={22} color="#C7A15A" />
             <span style={{ fontSize: 'var(--text-body-sm)' }}>Riding in <strong>Bengaluru (Bearhills)</strong>? Skip the form below — book a slot directly online.</span>
@@ -16,7 +16,7 @@ function Visit({ onNav, onSent }) {
           <Button variant="metal" href="https://book.softshor.in/book/solbhumi">Book a ride</Button>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '7fr 5fr', gap: 'var(--space-8)', alignItems: 'start' }}>
+        <div className="sv-split-75" style={{ alignItems: 'start' }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <Icon name="mdi:horseshoe" size={20} color="#A9832F" sway />
@@ -26,7 +26,7 @@ function Visit({ onNav, onSent }) {
             <p style={{ marginTop: 'var(--space-4)', fontSize: 'var(--text-body-lg)', color: 'var(--text-secondary)', maxWidth: '54ch' }}>
               Tell us who is riding, and whether you're after a lesson, boarding for your own horse, or a homestay. We will call you back to confirm.
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-5)', marginTop: 'var(--space-7)' }}>
+            <div className="sv-g2" style={{ marginTop: 'var(--space-7)' }}>
               <Input label="Full name" placeholder="e.g. Anjali Menon" />
               <Input label="Age" type="number" placeholder="e.g. 28" />
               <Input label="Email" type="email" placeholder="you@example.com" />
@@ -41,13 +41,13 @@ function Visit({ onNav, onSent }) {
               <Checkbox label="I may need to borrow riding gear" hint="Ask at the yard office — availability varies by campus." checked={borrow} onChange={setBorrow} />
               <Checkbox label="I have read the yard rules and understand riding is only in the morning or evening slot" checked={false} onChange={() => {}} />
             </div>
-            <div style={{ display: 'flex', gap: 'var(--space-3)', marginTop: 'var(--space-7)' }}>
+            <div className="sv-stack-mobile" style={{ display: 'flex', gap: 'var(--space-3)', marginTop: 'var(--space-7)' }}>
               <Button size="lg" onClick={() => setOpen(true)}>Send enquiry</Button>
               <Button size="lg" variant="ghost" onClick={() => onNav('training')}>Back to courses</Button>
             </div>
           </div>
 
-          <aside style={{ background: 'var(--surface-sunken)', border: '1px solid var(--border-gilt)', borderRadius: 'var(--radius-md)', padding: 'var(--space-6)', position: 'sticky', top: 100 }}>
+          <aside className="sv-aside-sticky" style={{ background: 'var(--surface-sunken)', border: '1px solid var(--border-gilt)', borderRadius: 'var(--radius-md)', padding: 'var(--space-6)' }}>
             <ArchMedia src="uploads/sv-dusk-trail.jpg" ratio="4 / 3" tone="oat" style={{ marginBottom: 'var(--space-5)' }} />
             <div style={{ fontSize: 'var(--text-overline)', letterSpacing: 'var(--tracking-overline)', textTransform: 'uppercase', color: 'var(--text-label)', marginBottom: 16 }}>Riding hours</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12, fontSize: 'var(--text-body-sm)', color: 'var(--text-secondary)' }}>
@@ -70,7 +70,7 @@ function Visit({ onNav, onSent }) {
       {/* Locations */}
       <Section tone="sunken">
         <SectionHead overline="Find us" title="Two campuses" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 'var(--space-6)' }}>
+        <div className="sv-g2" style={{ gap: 'var(--space-6)' }}>
           {[
             { name: 'Thrissur, Kerala', addr: 'Vaniyambara, Kombazha Street, Thrissur, Kerala 680652, India', phone: '+91 98474 00608', alt: '0487 268 7004' },
             { name: 'Bearhills, Bengaluru', addr: 'Agara, Bengaluru, India', phone: '+91 63663 01414', email: 'schooloflifestylebangalore@gmail.com', book: true },
@@ -86,6 +86,28 @@ function Visit({ onNav, onSent }) {
                 {c.email && <span style={{ display: 'flex', gap: 10, fontFamily: 'var(--font-mono)', wordBreak: 'break-all' }}><Icon name="mdi:email-outline" size={18} color="#A9832F" />{c.email}</span>}
               </div>
             </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* FAQ */}
+      <Section>
+        <SectionHead overline="Good to know" title="Frequently asked questions" align="center" />
+        <div style={{ maxWidth: 780, margin: '0 auto', display: 'flex', flexDirection: 'column' }}>
+          {[
+            ['What are your riding hours?', 'In Thrissur, riding is only in the morning (6.30–9.00am) or evening (4.30–7.00pm), daily. In Bengaluru (Bearhills), sessions are booked online — the live dashboard shows current slot availability.'],
+            ['How do I book a riding session in Bengaluru?', 'Book directly online at book.softshor.in/book/solbhumi — the Bearhills campus in Agara runs a live dashboard with 6 slots and 9 horses.'],
+            ['How much does horse boarding cost?', 'At the Thrissur campus, boarding is ₹20,000/month for Indian breeds and ₹25,000/month for English breeds, including food, grooming and daily care.'],
+            ['Do you offer homestay accommodation?', 'Yes, in Thrissur — nestled in wilderness on the edge of the Peechi–Vazhani Wildlife Sanctuary, with Kerala cuisine, trekking and ayurveda nearby. Bearhills, Bengaluru is a day-training campus without overnight stays.'],
+            ['What age can a child start riding?', "Bengaluru's Basic Level accepts ages 4–8, and Gold Kids covers ages 4–15. Thrissur's Preliminary course welcomes beginner riders of all ages."],
+            ['Where are you located?', 'Thrissur: Vaniyambara, Kombazha Street, Thrissur, Kerala 680652. Bengaluru: Agara, Bengaluru, Karnataka.'],
+          ].map(([q, a], i) => (
+            <Reveal key={q} delay={i * 60}>
+              <details style={{ padding: 'var(--space-5) 0', borderTop: '1px solid var(--border-hairline)' }}>
+                <summary style={{ cursor: 'pointer', fontFamily: 'var(--font-display)', fontSize: 'var(--text-title-3)', listStyle: 'none' }}>{q}</summary>
+                <p style={{ margin: 'var(--space-3) 0 0', fontSize: 'var(--text-body-sm)', color: 'var(--text-secondary)', lineHeight: 'var(--leading-body)' }}>{a}</p>
+              </details>
+            </Reveal>
           ))}
         </div>
       </Section>

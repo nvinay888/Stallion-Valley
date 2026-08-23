@@ -32,7 +32,7 @@ function Gallery({ onNav }) {
         <Breadcrumbs items={[{ label: 'Home', href: '#' }, { label: 'Gallery' }]} style={{ marginBottom: 'var(--space-6)' }} />
         <SectionHead overline="From the yard" title="Gallery"
           lede="A few moments from both campuses — Thrissur and Bearhills, Bengaluru. Follow us on Instagram and Facebook for more." />
-        <div style={{ columns: 4, columnGap: 'var(--space-5)' }}>
+        <div className="sv-masonry">
           {SHOTS.map(([file, ratio, cap], i) => (
             <Reveal key={file} delay={(i % 8) * 70} style={{ breakInside: 'avoid', marginBottom: 'var(--space-5)' }}>
               <ArchMedia src={'uploads/' + file} ratio={ratio} tone={i % 3 === 0 ? 'dark' : i % 3 === 1 ? 'warm' : 'oat'} caption={cap} />
@@ -44,7 +44,7 @@ function Gallery({ onNav }) {
       <Section tone="inverse">
         <div style={{ textAlign: 'center' }}>
           <SectionHead inverse align="center" overline="Follow along" title="More from the yard, every week" style={{ marginBottom: 'var(--space-6)' }} />
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 12 }}>
+          <div className="sv-stack-mobile" style={{ display: 'flex', justifyContent: 'center', gap: 12 }}>
             <Button variant="ghost-inverse" href="https://www.instagram.com/stallions_valley/">Instagram</Button>
             <Button variant="ghost-inverse" href="https://www.facebook.com/stallionsvalley/">Facebook</Button>
             <Button variant="metal" onClick={() => onNav('visit')}>Plan a visit</Button>
