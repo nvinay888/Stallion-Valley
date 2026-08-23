@@ -1,0 +1,63 @@
+:root {
+  --raven-900: #14100D;
+  --raven-800: #211A15;
+  --raven-700: #2E251E;
+
+  --bay-800: #3A241A;
+  --bay-700: #4E3021;
+  --bay-600: #6B3F28;
+  --chestnut-500: #8C4A2C;
+  --chestnut-400: #A8613C;
+
+  --buckskin-400: #C9A063;
+  --palomino-300: #DFBE8B;
+
+  --oat-200: #E5D6BE;
+  --parchment-100: #F2EADD;
+  --cream-50: #FBF7F0;
+
+  --dapple-600: #7C736A;
+  --dapple-500: #9B9187;
+  --dapple-300: #C7BFB4;
+  --dapple-200: #DED7CB;
+
+  --hunter-800: #1D2A20;
+  --hunter-700: #27362B;
+  --hunter-500: #3F5A45;
+  --hunter-300: #7E9382;
+
+  --brass-500: #B0873F;
+  --brass-300: #D9BC85;
+
+  --status-go: #3F5A45;
+  --status-caution: #B0873F;
+  --status-stop: #8A3527;
+
+  --surface-page: var(--cream-50);
+  --surface-raised: #FFFFFF;
+  --surface-sunken: var(--parchment-100);
+  --surface-muted: var(--oat-200);
+  --surface-inverse: var(--raven-900);
+  --surface-accent: var(--bay-700);
+  --surface-accent-soft: #F0E3D2;
+
+  --text-primary: var(--raven-900);
+  --text-secondary: var(--bay-700);
+  --text-muted: var(--dapple-600);
+  --text-inverse: var(--cream-50);
+  --text-inverse-muted: #B6A894;
+  --text-accent: var(--chestnut-500);
+  --text-link: var(--bay-600);
+  --text-link-hover: var(--chestnut-500);
+
+  --border-hairline: #E3D9C9;
+  --border-subtle: var(--dapple-200);
+  --border-strong: var(--dapple-500);
+  --border-inverse: #3B3029;
+  --border-focus: var(--brass-500);
+
+  --accent-primary: var(--bay-700);
+  --accent-primary-hover: var(--bay-800);
+  --accent-secondary: var(--hunter-700);
+  --accent-metal: var(--brass-500);
+}

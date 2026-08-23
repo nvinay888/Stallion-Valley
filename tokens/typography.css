@@ -1,0 +1,28 @@
+:root {
+  --text-display-1: 4.75rem;
+  --text-display-2: 3.75rem;
+  --text-display-3: 2.75rem;
+  --text-title-1: 2rem;
+  --text-title-2: 1.5rem;
+  --text-title-3: 1.1875rem;
+  --text-body-lg: 1.1875rem;
+  --text-body: 1.0625rem;
+  --text-body-sm: 0.9375rem;
+  --text-caption: 0.8125rem;
+  --text-overline: 0.75rem;
+
+  --leading-display: 1.06;
+  --leading-title: 1.18;
+  --leading-body: 1.62;
+  --leading-tight: 1.35;
+
+  --tracking-display: -0.015em;
+  --tracking-title: -0.005em;
+  --tracking-body: 0;
+  --tracking-overline: 0.18em;
+  --tracking-wordmark: 0.28em;
+
+  --weight-body: 400;
+  --weight-medium: 500;
+  --weight-strong: 600;
+}

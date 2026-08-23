@@ -1,0 +1,64 @@
+:root {
+  --gilt-600: #8A6E33;
+  --gilt-500: #A9832F;
+  --gilt-400: #C7A15A;
+  --gilt-300: #E0C78C;
+
+  --accent-primary: #191512;
+  --accent-primary-hover: #0E0B09;
+  --accent-secondary: var(--hunter-700);
+  --accent-metal: var(--gilt-400);
+  --text-label: var(--gilt-600);
+  --text-link: #191512;
+  --text-link-hover: var(--gilt-500);
+  --text-accent: var(--gilt-500);
+  --surface-inverse: #14100D;
+  --surface-accent: #191512;
+  --surface-accent-soft: #F4EBD8;
+  --border-focus: var(--gilt-400);
+  --border-gilt: rgba(169, 131, 47, 0.42);
+
+  --arch-top: 50% 50% 0 0 / 34% 34% 0 0;
+  --arch-full: 50% 50% var(--radius-md) var(--radius-md) / 30% 30% var(--radius-md) var(--radius-md);
+}
+
+[data-accent="bay"] {
+  --accent-primary: var(--bay-700);
+  --accent-primary-hover: var(--bay-800);
+  --accent-metal: var(--brass-500);
+  --text-label: var(--dapple-600);
+  --text-link: var(--bay-600);
+  --text-link-hover: var(--chestnut-500);
+  --text-accent: var(--chestnut-500);
+  --surface-inverse: var(--raven-900);
+  --surface-accent: var(--bay-700);
+  --surface-accent-soft: #F0E3D2;
+  --border-gilt: rgba(176, 135, 63, 0.4);
+}
+
+[data-accent="hunter"] {
+  --accent-primary: #1D2A20;
+  --accent-primary-hover: #131D16;
+  --accent-secondary: var(--bay-700);
+  --accent-metal: var(--brass-500);
+  --text-label: #7E6432;
+  --text-link: #2E4234;
+  --text-link-hover: var(--brass-500);
+  --text-accent: var(--hunter-500);
+  --surface-inverse: #16211A;
+  --surface-accent: #1D2A20;
+  --surface-accent-soft: #E4EAE4;
+}
+
+[data-accent="oxblood"] {
+  --accent-primary: #5A1F22;
+  --accent-primary-hover: #43161A;
+  --accent-metal: #C08A4A;
+  --text-label: #8B5A3C;
+  --text-link: #5A1F22;
+  --text-link-hover: var(--chestnut-400);
+  --text-accent: #8C3B33;
+  --surface-inverse: #1E1412;
+  --surface-accent: #5A1F22;
+  --surface-accent-soft: #F3E2DC;
+}
