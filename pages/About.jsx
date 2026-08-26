@@ -22,24 +22,8 @@ function About({ onNav }) {
         </div>
       </div>
 
-      {/* Mission */}
-      <Section>
-        <div className="sv-split-57" style={{ alignItems: 'center' }}>
-          <ArchMedia src="uploads/sol-bond-sit.jpg" ratio="4 / 5" tone="warm" caption="Understanding comes before riding." />
-          <div>
-            <SectionHead overline="Our mission" title="A deep understanding of every living thing" />
-            <p style={{ fontSize: 'var(--text-body)', lineHeight: 'var(--leading-body)', color: 'var(--text-secondary)' }}>
-              The School of Lifestyle seeks to foster a deep understanding of the environment and the living creatures that inhabit it, encouraging a sense of appreciation and respect for all life forms. Students are given the opportunity to develop a close bond with horses and other animals, learning about their behaviour, communication and psychology — a bond strengthened through riding, which builds deep trust and understanding between rider and horse.
-            </p>
-            <p style={{ fontSize: 'var(--text-body)', lineHeight: 'var(--leading-body)', color: 'var(--text-secondary)', marginTop: 'var(--space-4)' }}>
-              We also emphasise living in harmony with nature, encouraging sustainable practices that promote environmental conservation. Through this approach, the school hopes to inspire its students to become responsible, compassionate and environmentally-conscious individuals who make a positive impact on the world around them — and to instil a lifelong love of nature and animals.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      {/* Founder spotlight */}
-      <Section tone="inverse">
+      {/* Founder spotlight — first */}
+      <Section tone="inverse" style={{ paddingTop: 'var(--space-7)' }}>
         <div className="sv-split-57" style={{ alignItems: 'center' }}>
           <div>
             <ArchMedia src="uploads/sv-founder-sandeep-menon.jpg" ratio="4 / 5" tone="dark" caption="Sandeep Menon — Visionary leader. Passionate mentor. Driven by purpose." />
@@ -77,32 +61,28 @@ function About({ onNav }) {
         </div>
       </Section>
 
+      {/* Mission */}
+      <Section>
+        <div className="sv-split-57" style={{ alignItems: 'center' }}>
+          <ArchMedia src="uploads/sv-founder-sandeep-menon.jpg" ratio="4 / 5" tone="warm" caption="Understanding comes before riding." />
+          <div>
+            <SectionHead overline="Our mission" title="A deep understanding of every living thing" />
+            <p style={{ fontSize: 'var(--text-body)', lineHeight: 'var(--leading-body)', color: 'var(--text-secondary)' }}>
+              The School of Lifestyle seeks to foster a deep understanding of the environment and the living creatures that inhabit it, encouraging a sense of appreciation and respect for all life forms. Students are given the opportunity to develop a close bond with horses and other animals, learning about their behaviour, communication and psychology — a bond strengthened through riding, which builds deep trust and understanding between rider and horse.
+            </p>
+            <p style={{ fontSize: 'var(--text-body)', lineHeight: 'var(--leading-body)', color: 'var(--text-secondary)', marginTop: 'var(--space-4)' }}>
+              We also emphasise living in harmony with nature, encouraging sustainable practices that promote environmental conservation. Through this approach, the school hopes to inspire its students to become responsible, compassionate and environmentally-conscious individuals who make a positive impact on the world around them — and to instil a lifelong love of nature and animals.
+            </p>
+          </div>
+        </div>
+      </Section>
+
       <FactsMarquee tone="sunken" items={[
         'Nurturing riders of all ages for close to a decade',
         'Under the leadership of Sandeep Menon',
         'A lifestyle rooted in empathy, nature and holistic well-being',
         'Two premier centers in Bengaluru',
       ]} />
-
-      {/* Team */}
-      <Section>
-        <SectionHead overline="The team" title="Who keeps the show running" align="center" />
-        <div className="sv-g4">
-          {[
-            ['Sandeep Menon', 'Chief Mentor'],
-            ['Nishab', 'Director'],
-            ['Zohar Ali', 'Director'],
-            ['Aditya Menon', 'Coordinator'],
-          ].map(([name, role], i) => (
-            <Reveal key={name} delay={i * 90}>
-              <div style={{ textAlign: 'center', padding: 'var(--space-5)', background: 'var(--surface-sunken)', borderRadius: 'var(--radius-md)' }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-title-2)' }}>{name}</div>
-                <div style={{ fontSize: 'var(--text-caption)', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-label)', marginTop: 8 }}>{role}</div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
 
       {/* Brand moment */}
       <Section tone="sunken">
