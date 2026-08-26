@@ -1,11 +1,11 @@
 const PAGE_META = {
-  home: { title: "Stallion's Valley — Horse Riding Academy | Thrissur, Kerala & Bengaluru", desc: "Riding lessons, horse boarding and homestay in Thrissur, Kerala, plus live-booked packages at Bearhills, Bengaluru." },
-  about: { title: "About Us — Stallion's Valley Horse Riding Academy", desc: "Our story, our mission, and Sandeep Menon, Founder & Chief Mentor of Stallion's Valley School of Lifestyle, Bengaluru." },
-  training: { title: "Training & Packages — Stallion's Valley", desc: "Thrissur's course ladder and Bengaluru's live-booked packages and pricing, from trial rides to memberships." },
-  horses: { title: "Horses & Boarding — Stallion's Valley", desc: "Meet the horses of Stallion's Valley, and boarding fees for Indian and English breeds in Thrissur, Kerala." },
-  homestay: { title: "Family Homestay — Stallion's Valley, Thrissur", desc: "A holiday as close to nature as it gets — Kerala cuisine, trekking, ayurveda and horse riding at Stallion's Valley, Thrissur." },
-  gallery: { title: 'Gallery — Stallion’s Valley', desc: 'Photos from both campuses — Thrissur, Kerala and Bearhills, Bengaluru.' },
-  visit: { title: 'Plan a Visit — Stallion’s Valley', desc: 'Get in touch with Stallion’s Valley in Thrissur, Kerala, or book a ride at Bearhills, Bengaluru.' },
+  home: { title: "Stallion's Valley School of Lifestyle — Horse Riding Academy, Bengaluru", desc: "Bond. Ride. Live. Horse riding lessons, trail safaris and conscious horsemanship at two Bengaluru centers — off Kanakapura Road and in Whitefield." },
+  about: { title: "About Us — Stallion's Valley School of Lifestyle", desc: "Our story, the SOL Way, and Sandeep Menon — Founder & Chief Mentor of Stallion's Valley School of Lifestyle, Bengaluru." },
+  programs: { title: "Programs & Pricing — Stallion's Valley School of Lifestyle", desc: "Trial rides, structured courses, monthly riding plans and memberships — live-booked online at our Kanakapura Road campus, Bengaluru." },
+  safaris: { title: "Horse Safaris in Bengaluru — Stallion's Valley School of Lifestyle", desc: "Sunrise and sunset horse safaris through nature, 30 minutes from Bangalore city. Beginner-friendly trail rides at Whitefield and Kanakapura." },
+  rescue: { title: "Horse Rescue & Adoption — Stallion's Valley School of Lifestyle", desc: "A compassionate lifestyle in practice — the rescue, rehabilitation and adoption of horses at Stallion's Valley, Bengaluru." },
+  gallery: { title: "Gallery — Stallion's Valley School of Lifestyle", desc: "Life at Stallion's Valley — riders, horses and trail safaris across our Bengaluru centers." },
+  visit: { title: "Contact & Visit — Stallion's Valley School of Lifestyle", desc: "Find us off Kanakapura Road and in Whitefield, Bengaluru. Book a ride online or reach us on phone and WhatsApp." },
 };
 
 function pageFromHash() {
@@ -44,16 +44,16 @@ function Site() {
       <div style={{ marginTop: page === 'home' ? -76 : 0 }}>
         {page === 'home' && <Home onNav={nav} />}
         {page === 'about' && <About onNav={nav} />}
-        {page === 'training' && <Training onNav={nav} />}
-        {page === 'horses' && <Horses onNav={nav} />}
-        {page === 'homestay' && <Homestay onNav={nav} />}
+        {page === 'programs' && <Programs onNav={nav} />}
+        {page === 'safaris' && <Safaris onNav={nav} />}
+        {page === 'rescue' && <Rescue onNav={nav} />}
         {page === 'gallery' && <Gallery onNav={nav} />}
         {page === 'visit' && <Visit onNav={nav} onSent={() => { setToast(true); nav('home'); }} />}
       </div>
       <Footer onNav={nav} />
       <div style={{ position: 'fixed', left: 24, bottom: 24, zIndex: 80 }}>
         <Toast open={toast} tone="go" title="Message sent" onClose={() => setToast(false)}>
-          Thank you — our yard office will call you back within one working day.
+          Thank you — we will get back to you shortly.
         </Toast>
       </div>
     </div>

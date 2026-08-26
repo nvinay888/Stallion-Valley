@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://nvinay888.github.io/Stallion-Valley/</loc><priority>1.0</priority></url>
+  <url><loc>https://nvinay888.github.io/Stallion-Valley/#programs</loc><priority>0.9</priority></url>
+  <url><loc>https://nvinay888.github.io/Stallion-Valley/#safaris</loc><priority>0.9</priority></url>
+  <url><loc>https://nvinay888.github.io/Stallion-Valley/#rescue</loc><priority>0.7</priority></url>
   <url><loc>https://nvinay888.github.io/Stallion-Valley/#about</loc><priority>0.7</priority></url>
-  <url><loc>https://nvinay888.github.io/Stallion-Valley/#training</loc><priority>0.9</priority></url>
-  <url><loc>https://nvinay888.github.io/Stallion-Valley/#horses</loc><priority>0.7</priority></url>
-  <url><loc>https://nvinay888.github.io/Stallion-Valley/#homestay</loc><priority>0.6</priority></url>
   <url><loc>https://nvinay888.github.io/Stallion-Valley/#gallery</loc><priority>0.5</priority></url>
   <url><loc>https://nvinay888.github.io/Stallion-Valley/#visit</loc><priority>0.8</priority></url>
 </urlset>
