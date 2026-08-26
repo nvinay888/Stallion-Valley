@@ -87,7 +87,7 @@ function About({ onNav }) {
       {/* Brand moment */}
       <Section tone="sunken">
         <div className="sv-split-66" style={{ alignItems: 'center' }}>
-          <ArchMedia src="uploads/sol-dreams-flag.jpg" ratio="4 / 5" tone="dark" caption="Don't let your dreams die on your bucket list — go ride a horse." />
+          <ArchMedia src="uploads/sv-bearhills-canter.jpg" ratio="4 / 5" tone="warm" caption="Don't let your dreams die on your bucket list — go ride a horse." />
           <div>
             <SectionHead overline="The spirit of it" title="Go ride a horse"
               lede="Some things shouldn't wait on a bucket list. Whether you're six or sixty, a first ride is the beginning of a bond — and the bond is the beginning of everything else." />
