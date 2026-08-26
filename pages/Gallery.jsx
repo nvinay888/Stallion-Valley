@@ -20,7 +20,7 @@ const SHOTS = [
   ['sol-bond-man.jpg', '3 / 4', 'Trust, both ways.'],
   ['sol-portrait-girl.jpg', '3 / 4', 'Partners.'],
   ['sol-arena-rider.jpg', '3 / 4', 'A quiet moment in the arena.'],
-  ['sol-founder-flag.jpg', '3 / 4', 'Sandeep Menon at the Kanakapura campus.'],
+  ['sol-founder-poster.jpg', '2 / 3', 'Under the leadership of Sandeep Menon.'],
   ['sv-bearhills-arena.jpg', '4 / 3', 'The arena, Kanakapura Road.'],
   ['sv-bearhills-canter.jpg', '3 / 4', 'Canter work.'],
   ['sv-bearhills-baby-rider.jpg', '3 / 4', 'Building a bond with my new rider — at 10 months.'],

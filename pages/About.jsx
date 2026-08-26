@@ -64,7 +64,7 @@ function About({ onNav }) {
       {/* Mission */}
       <Section>
         <div className="sv-split-57" style={{ alignItems: 'center' }}>
-          <ArchMedia src="uploads/sv-founder-sandeep-menon.jpg" ratio="4 / 5" tone="warm" caption="Understanding comes before riding." />
+          <ArchMedia src="uploads/sol-herd-graze.jpg" ratio="4 / 5" tone="warm" caption="At home in open country." />
           <div>
             <SectionHead overline="Our mission" title="A deep understanding of every living thing" />
             <p style={{ fontSize: 'var(--text-body)', lineHeight: 'var(--leading-body)', color: 'var(--text-secondary)' }}>

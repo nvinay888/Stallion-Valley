@@ -124,7 +124,7 @@ function Home({ onNav }) {
         <SectionHead overline="Two premier centers" title="Kanakapura Road & Whitefield" />
         <div className="sv-g2" style={{ gap: 'var(--space-6)' }}>
           {[
-            { name: 'Off Kanakapura Road', motto: 'Nature. Space. Freedom.', body: 'A serene environment to learn, explore and grow with horses — our main campus at Tatguni, past Orchid International School, with live online booking from 6 am.', addr: 'Sy. No. 24/3, Kanakapura Road, Tatguni, Agara, Bengaluru 560062', phone: '+91 63663 01414', img: 'sol-founder-flag.jpg', book: true },
+            { name: 'Off Kanakapura Road', motto: 'Nature. Space. Freedom.', body: 'A serene environment to learn, explore and grow with horses — our main campus at Tatguni, past Orchid International School, with live online booking from 6 am.', addr: 'Sy. No. 24/3, Kanakapura Road, Tatguni, Agara, Bengaluru 560062', phone: '+91 63663 01414', img: 'sv-bearhills-arena.jpg', book: true },
             { name: 'Whitefield', motto: 'Convenience. Community. Connection.', body: 'Modern facilities with a vibrant community of horse lovers — lessons and safaris on the east side of the city.', addr: 'Whitefield, Bengaluru', phone: '+91 63660 64422', img: 'sol-arena-rider.jpg', book: false },
           ].map((c, i) => (
             <Reveal key={c.name} delay={i * 120}>
