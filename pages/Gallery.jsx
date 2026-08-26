@@ -15,7 +15,6 @@ const SHOTS = [
   ['sol-woman-ride.jpg', '3 / 4', 'Steady and settled.'],
   ['sol-herd-graze.jpg', '3 / 4', 'A grazing halt.'],
   ['sol-rider-boy.jpg', '3 / 4', 'Learning the ropes.'],
-  ['sol-dreams-flag.jpg', '4 / 5', 'Go ride a horse.'],
   ['sol-evening-ride.jpg', '3 / 4', 'Last light.'],
   ['sol-bond-man.jpg', '3 / 4', 'Trust, both ways.'],
   ['sol-portrait-girl.jpg', '3 / 4', 'Partners.'],
