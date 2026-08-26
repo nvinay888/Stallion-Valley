@@ -1,4 +1,5 @@
 const SHOTS = [
+  ['sv-founder-sandeep-menon.jpg', '1 / 1', 'Sandeep Menon — Founder & Chief Mentor.'],
   ['sol-hero-bond.jpg', '3 / 4', 'The bond comes first.'],
   ['sol-safari-trail.jpg', '4 / 3', 'Coming down the trail.'],
   ['sol-arena-hug.jpg', '3 / 4', 'After the session.'],

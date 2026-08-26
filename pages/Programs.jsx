@@ -96,7 +96,7 @@ function Programs({ onNav }) {
       {/* How it works */}
       <Section tone="sunken">
         <div className="sv-split-57" style={{ alignItems: 'center' }}>
-          <ArchMedia src="uploads/sol-kid-ride.jpg" ratio="4 / 5" tone="oat" caption="Confidence grows one session at a time." />
+          <ArchMedia src="uploads/sol-man-ride.jpg" ratio="4 / 5" tone="oat" caption="Confidence grows one session at a time." />
           <div>
             <SectionHead overline="How it works" title="Book online, ride in person" />
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

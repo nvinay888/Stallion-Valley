@@ -31,9 +31,15 @@ function Home({ onNav }) {
               <Button variant="inverse" size="lg" href={BOOKING_URL}>Book a ride</Button>
               <Button variant="ghost-inverse" size="lg" onClick={() => onNav('programs')}>See programs & pricing</Button>
             </div>
+            <div style={{ marginTop: 'var(--space-6)', display: 'flex', alignItems: 'center', gap: 12 }}>
+              <div style={{ height: 1, width: 32, background: 'var(--accent-metal)' }} />
+              <span style={{ fontSize: 'var(--text-caption)', color: 'var(--text-inverse-muted)' }}>
+                Under the leadership of <a href="#" onClick={(e) => { e.preventDefault(); onNav('about'); }} style={{ color: 'var(--gilt-300)', textDecoration: 'none' }}>Sandeep Menon</a> — Founder &amp; Chief Mentor
+              </span>
+            </div>
           </div>
           <div style={{ position: 'relative' }}>
-            <ArchMedia src="uploads/sol-hero-bond.jpg" ratio="3 / 4" tone="dark" />
+            <ArchMedia src="uploads/sv-founder-sandeep-menon.jpg" ratio="3 / 4" tone="dark" />
             <div className="sv-hero-badge" style={{
               background: 'var(--cream-50)', padding: '18px 22px',
               borderRadius: 'var(--radius-sm)', boxShadow: 'var(--shadow-lg)', display: 'flex', alignItems: 'center', gap: 16,
@@ -160,7 +166,7 @@ function Home({ onNav }) {
       {/* Rescue teaser */}
       <Section>
         <div className="sv-split-57" style={{ alignItems: 'center' }}>
-          <ArchMedia src="uploads/sol-kid-graze.jpg" ratio="4 / 5" tone="warm" caption="Kindness is taught by example." />
+          <ArchMedia src="uploads/sol-bond-man.jpg" ratio="4 / 5" tone="warm" caption="Kindness is taught by example." />
           <div>
             <SectionHead overline="Rescue & adoption" title="A compassionate lifestyle, in practice"
               lede="Compassion is not a slogan here — the rescue, care and adoption of horses is part of how the School of Lifestyle teaches responsibility and respect for all beings." />

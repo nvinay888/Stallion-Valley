@@ -25,7 +25,7 @@ function Rescue({ onNav }) {
       {/* Why */}
       <Section>
         <div className="sv-split-57" style={{ alignItems: 'center' }}>
-          <ArchMedia src="uploads/sol-bond-man.jpg" ratio="4 / 5" tone="warm" caption="Care first. Everything else follows." />
+          <ArchMedia src="uploads/sol-founder-flag.jpg" ratio="4 / 5" tone="warm" caption="Sandeep Menon with one of the herd at the Kanakapura Road campus." />
           <div>
             <SectionHead overline="Why we do it" title="Every horse deserves a second act"
               lede="A school built on kindness, responsibility and a lifestyle that nurtures all beings has a duty to the horses that need it most." />
